@@ -6,7 +6,7 @@
     border: 1px solid rebeccapurple;
     gap: 10px;
 }
-img{
+.container-img{
     width: 100%;
 }
 .container-image{
@@ -17,19 +17,46 @@ img{
 .container-details{
     width: 70%;
 }
-
+.secondnd-container{
+    display: flex;
+    border: 1px solid red;
+    gap: 20px;
+}
+.second-container-details{
+    width: 70%;
+}
+.second-container-image{
+    width: 30%;
+}
+.second-container-img{
+    width: 100%;
+}
 @media screen and (max-width : 667px) {
     .container{
         flex-direction: column;
     }
     .container-details{
         width: 100%;
+        text-align: center;
     }
     .container-image{
         width: 100%;
         padding-top: 10px;
     }
-    img{
+    .container-img{
+        /* width: 100%; */
+    }
+    .secondnd-container{
+    flex-direction: column-reverse;
+    }
+    .second-container-image{
         width: 100%;
+    }
+    .second-container-img{
+        /* width: 100%; */
+    }
+    .second-container-details{
+        width: 100%;
+        text-align: center;
     }
 }
