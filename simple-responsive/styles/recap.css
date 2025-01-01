@@ -19,3 +19,14 @@ img{
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
+
+@media screen and (max-width:576px) {
+    .row{
+        flex-direction: column;
+        height: auto;
+    }
+    .varticle-collage{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+}
